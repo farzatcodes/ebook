@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! You're In!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="thank-you-page">
+    <div id="confetti-container"></div>
+
+    <div class="thank-you-container">
+        <div class="thank-you-card">
+            <img src="images/success-illustration.svg" alt="Success checkmark" class="success-icon">
+            <h1 class="thank-you-title">You're On The List!</h1>
+            <p class="thank-you-subtitle">Thank you for joining the inner circle. Get ready to transform your productivity.</p>
+            
+            <div class="next-steps">
+                <h3>What Happens Next?</h3>
+                <ol>
+                    <li>You'll receive a welcome email with your <strong>bonus chapter</strong> within 5 minutes.</li>
+                    <li>We'll keep you updated on the official launch date.</li>
+                    <li>You'll be invited to our exclusive Discord community before anyone else.</li>
+                </ol>
+            </div>
+
+            <div class="action-buttons">
+                <a href="downloads/sample-chapter.pdf" download class="cta-button primary-cta">Download Bonus Chapter</a>
+                <a href="#" id="share-twitter" class="cta-button secondary-cta">Share with Friends</a>
+            </div>
+            
+            <p class="redirect-notice">You will be redirected back to the homepage in <span id="redirect-timer">30</span> seconds.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
