@@ -58,7 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 confetti.classList.add('confetti');
                 confetti.style.left = `${Math.random() * 100}vw`;
                 confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear ${Math.random() * 2}s forwards`;
-                confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                // Use the new accent color for confetti
+                confetti.style.backgroundColor = `hsl(54, 100%, 50%)`;
                 confettiContainer.appendChild(confetti);
             }
         }
@@ -87,14 +88,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }, 1000);
         }
-
-        // 4. URL Parameter Handling (Optional Personalization)
-        // const urlParams = new URLSearchParams(window.location.search);
-        // const userEmail = urlParams.get('email');
-        // if (userEmail) {
-        //     console.log(`Subscribed email: ${userEmail}`);
-        //     // You could potentially use this to personalize the page, e.g.:
-        //     // document.querySelector('.thank-you-subtitle').textContent = `A confirmation has been sent to ${userEmail}.`;
-        // }
     }
 });
